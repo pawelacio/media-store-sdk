@@ -43,10 +43,6 @@ export const LabelStyled = styled.label`
     opacity: 0;
   }
 
-  &::-webkit-autofill {
-    transform: translate(0, -25px) scaleY(0.9);
-  }
-
   ${props =>
     props.hasValue &&
     css`
@@ -109,6 +105,11 @@ export const InputElementStyled = styled.input`
 
   font-size: 15px;
   line-height: 1.3;
+
+
+  &::-webkit-autofill {
+    transform: translate(0, -25px) scaleY(0.9);
+  }
 
   &:focus + label {
     transform: translate(0, -25px) scaleY(0.9);
