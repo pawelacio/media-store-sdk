@@ -110,6 +110,11 @@ export const InputElementStyled = styled.input`
     transform: translate(0, -25px) scaleY(0.9);
   }
 
+  &:placeholder-shown + label {
+    transform: translate(0, -25px) scaleY(0.9);
+    color: ${Colors.ConfirmColor};
+  }
+
   &:focus + label {
     transform: translate(0, -25px) scaleY(0.9);
     color: ${Colors.ConfirmColor};
