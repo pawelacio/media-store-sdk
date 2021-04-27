@@ -43,6 +43,10 @@ export const LabelStyled = styled.label`
     opacity: 0;
   }
 
+  &::-webkit-autofill {
+    transform: translate(0, -25px) scaleY(0.9);
+  }
+
   ${props =>
     props.hasValue &&
     css`
