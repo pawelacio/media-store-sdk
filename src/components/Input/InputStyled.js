@@ -106,7 +106,6 @@ export const InputElementStyled = styled.input`
   font-size: 15px;
   line-height: 1.3;
 
-
   &::-webkit-autofill {
     transform: translate(0, -25px) scaleY(0.9);
   }
